@@ -1,4 +1,4 @@
-# ⚡ QuestBoard – Gamified Task Manager v2
+# ⚡ FocusForge – Gamified Task Manager v2
 
 An enhanced, reimagined React productivity app with gamification, achievements, and smart tips.
 
@@ -15,9 +15,7 @@ Open http://localhost:5173
 
 ---
 
-## ✨ What's New (vs original)
-
-| Feature | QuestBoard v2 |
+| Feature | FocusForge |
 |---|---|
 | Task priorities | Low / Medium / High |
 | Task categories | Study, Work, Health, etc. |
@@ -27,8 +25,8 @@ Open http://localhost:5173
 | Sort tasks | By date or priority |
 | XP toast notification | Animated +XP popup |
 | Level titles | Novice → Immortal |
-| App name | QuestBoard |
-| Data key | questboard_v2 |
+| App name | FocusForge |
+| Data key | FocusForge |
 
 ---
 
