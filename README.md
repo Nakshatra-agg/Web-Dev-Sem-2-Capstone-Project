@@ -17,18 +17,18 @@ Open http://localhost:5173
 
 ## ✨ What's New (vs original)
 
-| Feature | Original | QuestBoard v2 |
-|---|---|---|
-| Task priorities | ❌ | ✅ Low / Medium / High |
-| Task categories | ❌ | ✅ Study, Work, Health, etc. |
-| Achievements | ❌ | ✅ 8 unlockable badges |
-| Stats dashboard | ❌ | ✅ Breakdown by priority & category |
-| Search tasks | ❌ | ✅ Live search |
-| Sort tasks | ❌ | ✅ By date or priority |
-| XP toast notification | ❌ | ✅ Animated +XP popup |
-| Level titles | ❌ | ✅ Novice → Immortal |
-| App name | Level Up | QuestBoard |
-| Data key | questboard | questboard_v2 |
+| Feature | QuestBoard v2 |
+|---|---|
+| Task priorities | Low / Medium / High |
+| Task categories | Study, Work, Health, etc. |
+| Achievements | 8 unlockable badges |
+| Stats dashboard | Breakdown by priority & category |
+| Search tasks | Live search |
+| Sort tasks | By date or priority |
+| XP toast notification | Animated +XP popup |
+| Level titles | Novice → Immortal |
+| App name | QuestBoard |
+| Data key | questboard_v2 |
 
 ---
 
