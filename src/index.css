@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { @apply scroll-smooth; }
+  body {
+    @apply bg-[#0a0714] text-gray-100 font-sans antialiased;
+    background-image:
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%237c52ff' fill-opacity='0.03'%3E%3Cpath d='M0 0h60v1H0zM0 0v60h1V0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
+      radial-gradient(ellipse at 15% 10%, rgba(124,82,255,0.12) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 90%, rgba(6,182,212,0.08) 0%, transparent 55%),
+      radial-gradient(ellipse at 50% 50%, rgba(10,7,20,1) 0%, transparent 100%);
+  }
+}
+
+@layer components {
+  /* ─── Buttons ─── */
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 px-5 py-2.5 
+           bg-gradient-to-r from-vault-500 to-vault-600 
+           hover:from-vault-400 hover:to-vault-500
+           text-white font-bold rounded-xl
+           shadow-[0_0_20px_rgba(124,82,255,0.4)] hover:shadow-[0_0_30px_rgba(124,82,255,0.6)]
+           transition-all duration-200 active:scale-95
+           focus:outline-none focus:ring-2 focus:ring-vault-400 focus:ring-offset-2 focus:ring-offset-[#0a0714];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5
+           bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20
+           text-gray-300 hover:text-white font-semibold rounded-xl
+           transition-all duration-200 active:scale-95
+           focus:outline-none focus:ring-2 focus:ring-vault-500/50;
+  }
+  .btn-coin {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5
+           bg-gradient-to-r from-coin-400 to-coin-500
+           hover:from-coin-300 hover:to-coin-400
+           text-gray-900 font-black rounded-xl
+           shadow-[0_0_20px_rgba(251,191,36,0.35)] hover:shadow-[0_0_30px_rgba(251,191,36,0.5)]
+           transition-all duration-200 active:scale-95;
+  }
+  /* ─── Cards ─── */
+  .card {
+    @apply bg-white/[0.04] backdrop-blur-sm border border-white/[0.08] rounded-2xl p-5
+           hover:border-white/[0.14] transition-all duration-200;
+  }
+  .card-glow {
+    @apply bg-gradient-to-br from-vault-950/80 to-[#0a0714] 
+           border border-vault-500/30 rounded-2xl p-5
+           shadow-[0_0_30px_rgba(124,82,255,0.2)];
+  }
+  /* ─── Inputs ─── */
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl 
+           bg-white/5 border border-white/10 
+           text-gray-100 placeholder-gray-600
+           focus:outline-none focus:border-vault-500/60 focus:bg-white/[0.08] focus:ring-1 focus:ring-vault-500/40
+           transition text-sm;
+  }
+  /* ─── Badge ─── */
+  .badge { @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold; }
+  /* ─── Section header ─── */
+  .section-title {
+    @apply text-xs font-black uppercase tracking-[0.15em] text-gray-500 mb-3;
+  }
+}
+
+/* XP bar shimmer */
+.xp-bar-fill {
+  background: linear-gradient(90deg, #7c52ff, #22d3ee, #7c52ff);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s linear infinite;
+}
+/* Coin bar shimmer */
+.coin-bar-fill {
+  background: linear-gradient(90deg, #f59e0b, #fde68a, #f59e0b);
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(124,82,255,0.3); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(124,82,255,0.5); }
+
+/* Glassy hover lift */
+.lift { @apply transition-all duration-200 hover:-translate-y-0.5 hover:shadow-vault; }
